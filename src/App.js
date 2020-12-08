@@ -34,7 +34,7 @@ const [posts, setPosts] = useState(Data)
      */
     setPosts(posts.map(post => {
       return post.id === postId ?
-      {...post, likes: post + 1}
+      {...post, likes: post.likes + 1}
       : post
       })
     );
